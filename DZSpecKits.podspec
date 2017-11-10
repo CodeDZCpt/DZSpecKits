@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "我的私人pod库终于通了,不容易啊"
+  s.description  = "The Private Of Pod Spec"
 
   s.homepage     = "https://github.com/CodeDZCpt/DZSpecKits"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -36,7 +36,6 @@ Pod::Spec.new do |s|
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
-
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
@@ -62,11 +61,11 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -78,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-s.source       = { :git => "https://github.com/CodeDZCpt/DZSpecKits.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/CodeDZCpt/DZSpecKits.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +89,7 @@ s.source       = { :git => "https://github.com/CodeDZCpt/DZSpecKits.git", :tag =
   #
 
   s.source_files  = "DZSpecKits/Classes", "DZSpecKits/Classes/**/*.{h,m}"
-  s.exclude_files = "DZSpecKits/Classes/Exclude"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
